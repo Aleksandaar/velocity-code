@@ -43,7 +43,7 @@ Spec for Admin center.
 
 ## OOP ##
 
-The code sample is consisted of more advanced approach to building the applications. Eventhough these are just small fractions of codes, it represents usage of classes and inheritance and testign for such model:
+The code sample is consisted of more advanced approach to building the applications. Although these are just small fractions of codes, it represents usage of classes and inheritance and testing of such model:
 
 ### Model and spec ###
 
