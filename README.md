@@ -48,3 +48,12 @@ The code sample is consisted of more advanced approach to building the applicati
 ### Model and spec ###
 
 The code is located in oop directory. The code has elements that will have to include other elements so it could be explained better, but this is just an example of a simple Class and the spec for it.
+
+
+## Custom Samples ##
+
+Custom samples part is consisted of random assets, stylesheets, controllers, views and additional configuration files
+
+### Views, stylesheets and javascript ###
+
+The code is located in assets and in views folder. Even though there are some advantages and disadvantages of using different approaches (using coffeescript for javascript, HAML etc.) these examples only show a general usage for each of those types.
