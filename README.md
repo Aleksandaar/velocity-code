@@ -1,59 +1,39 @@
-Velocity Code
+Showcase Code
 =============
 
 ### Code sample consists of two simple 'applications' ###
 
 <ol>
-<li>Orders - A sample of controllers, modelrs, spec etc.</li>
-<li>OOP - A sample of usage of Object Oriented Programming in Ruby on Rails</li>
+<li>Group Event - Represents a usage of API, creating needed model, controller, and working with TDD approach</li>
+<li>Streaming App - A fraction of a user streaming app, generating user content and streaming it to the live watchers</li>
+<li>Additional examples - Additional examples of models and their specs in Rails</li>
+<li>Rails and Angular - Small fraction of </li>
 </ol>
 
-## Orders ##
+# Group Event app #
 
-The small 'application' is consisted of:
+Assumptions and initial set-up of the app:
 
-> 1.   Controller
-> 2.   Model
-> 3.   Contoller spec
-> 2.   Model spec
-> 2.   Request spec
+> A group event will be created by an user. The group event should run for a whole number of days e.g.. 30 or 60. There should be attributes to set and update the start, end or duration of the event (and calculate the other value). The event also has a name, description (which supports formatting) and location. The event should be draft or published. To publish all of the fields are required, it can be saved with only a subset of fields before it’s published. When the event is deleted/remove it should be kept in the database and marked as such.
 
-### 1. Controller ###
+Code sample consists of:
 
-Controller represents the 'simple' REST. Contoller represents controller organization, keeping the controller as thin as possible. It represents usage of before filters and types of responds (API controllers will be added in next chapters)
+> An AR model, spec and migration for a GroupEvent that meets the needs of the description above. The api controller and spec to support JSON request/responses to manage these GroupEvents. For this purposes auth is ignored. The example is showing building the API without the `jbuilder`.
 
-### 2. Model ###
+# Streaming app #
 
-Model shows usage of polimorfic association, before validations and simple aliases 
+Description:
 
-### 3. Contoller spec ###
-
-Spec for controller represents usage of <code>let</code> and <code>let!</code>.
-It shows usage of shared examples, and using helpers inside specs.
-
-### 4. Model spec ###
-
-Model specs again uses <code>let</code> and <code>let!</code> helper methods, but also represents how to use <code>it "should" </code> in tests.
+> The app is used for making it possible for users to stream videos from their mobile devices and show them to other users on the web-site and their followers.
 
 
-### 5. Request spec ###
+# Additional examples #
 
-Spec for Admin center.
-
-
-## OOP ##
-
-The code sample is consisted of more advanced approach to building the applications. Although these are just small fractions of codes, it represents usage of classes and inheritance and testing of such model:
-
-### Model and spec ###
-
-The code is located in oop directory. The code has elements that will have to include other elements so it could be explained better, but this is just an example of a simple Class and the spec for it.
+The sample code of different testing approaches. Only tests and a relevant model are shown.
 
 
-## Custom Samples ##
+# Rails and Angular #
 
-Custom samples part is consisted of random assets, stylesheets, controllers, views and additional configuration files
+The code represents only a small fraction of Rails + Angular app - only the `Directive` and a `Controller`. Other parts which are not included consists of other services, state providers and relevant Rails API calls which are used in the app.
 
-### Views, stylesheets and javascript ###
-
-The code is located in assets and in views folder. Even though there are some advantages and disadvantages of using different approaches (using coffeescript for javascript, HAML etc.) these examples only show a general usage for each of those types.
+The Angular code structure can be seen in the image [a relative link](rails_and_angular/images/angular-code-structure.png)

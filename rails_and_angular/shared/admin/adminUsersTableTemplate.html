@@ -1,0 +1,43 @@
+<tr class="admin-users-manager_user" ng-repeat="user in vm.users">
+	<td class="admin-users-manager_email">
+		<div class="admin-users-manager_avatar">
+			<avatar url="{{ user.image.thumbUrl }}" name="{{ user.username }}"></avatar>
+		</div>
+		<span class="admin-users-manager_email-wrapper" title="{{ user.email }}">
+			{{ user.email }}
+		</span>
+	</td>
+	<td class="admin-users-manager_username">
+		{{ user.username }}
+	</td>
+	<td class="admin-users-manager_plan">
+		{{ user.primary_account.plan }}
+	</td>
+	<td class="admin-users-manager_account">
+		{{ user.primary_account.name }}
+	</td>
+	<td class="admin-users-manager_date">
+		{{ user.created_at | date:'MM/dd/yyyy' }}
+	</td>
+	<td class="admin-users-manager_date">
+		{{ user.last_sign_in_at | date:'MM/dd/yyyy' }}
+	</td>
+
+	<td class="admin-users-manager_actions">
+		<button type="button" class="btn btn-link" ng-click="vm.showQuotaManagerFor(user)">
+			Update Account
+		</button>
+		<button type="button" class="btn btn-link" ng-click="vm.signInAs(user)">
+			Sign in as
+		</button>
+		<button type="button" class="btn btn-link" ng-click="vm.showContentFor(user)">
+			View Content
+		</button>
+		<button type="button" class="btn btn-link" ng-click="vm.enable(user)" ng-if="!user.isActive">
+			Enable
+		</button>
+		<button type="button" class="btn btn-link" ng-click="vm.disable(user)" ng-if="user.isActive">
+			Disable
+		</button>
+	</td>
+</tr>
