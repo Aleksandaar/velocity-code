@@ -36,4 +36,4 @@ The sample code of different testing approaches. Only tests and a relevant model
 
 The code represents only a small fraction of Rails + Angular app - only the `Directive` and a `Controller`. Other parts which are not included consists of other services, state providers and relevant Rails API calls which are used in the app.
 
-The Angular code structure can be seen in the image [a relative link](rails_and_angular/images/angular-code-structure.png)
+The Angular code structure can be seen in the [image](rails_and_angular/images/angular-code-structure.png)
