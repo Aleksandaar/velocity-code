@@ -1,7 +1,7 @@
 Showcase Code
 =============
 
-### Code sample consists of two simple 'applications' ###
+### Showcase code is consisted of: ###
 
 <ol>
 <li>Group Event - Represents a usage of API, creating needed model, controller, and working with TDD approach</li>
