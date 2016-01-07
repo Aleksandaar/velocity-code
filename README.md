@@ -7,7 +7,7 @@ Showcase Code
 <li>Group Event - Represents a usage of API, creating needed model, controller, and working with TDD approach</li>
 <li>Streaming App - A fraction of a user streaming app, generating user content and streaming it to the live watchers</li>
 <li>Additional examples - Additional examples of models and their specs in Rails</li>
-<li>Rails and Angular - Small fraction of </li>
+<li>Rails and Angular - Small fraction of Rails and Angular app</li>
 </ol>
 
 # Group Event app #
