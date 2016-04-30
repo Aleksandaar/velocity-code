@@ -7,8 +7,8 @@ module Api
         @current_user ||= @session.user
       end
 
-      def current_session
-        @session
+      def current_session(session)
+        @session = session
       end
 
       def sign_in(user)
@@ -24,24 +24,27 @@ module Api
           if !s
             error E_ACCESS_DENIED, 'Authentication required for this operation'
             return false
-          end
-          @session = s
+          else
+            current_session(s)
 
-          # Automatically sign out user if his account is not confirmed
-          if current_user && !current_user.active_for_authentication?
-            sign_out
-            error E_INVALID_LOGIN, "User's email address is not confirmed"
-            return false
+            # Automatically sign out user if the account is not confirmed
+            if current_user && !current_user.active_for_authentication?
+              sign_out
+              error E_INVALID_LOGIN, "User's email address is not confirmed"
+              return false
+            else
+              true
+            end
           end
-          true
         end
 
         def authenticate_user!
           unless current_user
             unauthorized!
-            return false
+            false
+          else
+            true
           end
-          true
         end
 
         def sign_out
