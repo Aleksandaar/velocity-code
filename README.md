@@ -3,13 +3,24 @@ Showcase Code
 
 ### Showcase code is consisted of: ###
 
+### APPs:
+
 <ol>
-<li>Streaming App - A fraction of a user streaming app, generating user content and streaming it to the live watchers</li>
-<li>Group Event - Represents a usage of API, creating needed model, controller, and working with TDD approach</li>
-<li>Additional examples - Additional examples of models and their specs in Rails</li>
-<li>Rails and Angular - Small fraction of Rails and Angular app</li>
+  <li>Streaming App - A fraction of a user streaming app, generating user content and streaming it to the live watchers</li>
+  <li>Calendar App - User scheduling events between teaches and students</li>
+  <li>Book App - Book finder app</li>
 </ol>
 
+### Additional examples:
+
+<ol>
+  <li>Group Event - Represents a usage of API, creating needed model, controller, and working with TDD approach</li>
+  <li>Additional examples - Additional examples of models and their specs in Rails</li>
+  <li>Rails and Angular - Small fraction of Rails and Angular app</li>
+</ol>
+
+<hr/>
+* <em>Examples are modified slightly to be unusable in real-life usage. This is for representational purposes only. </em>
 
 # Streaming app #
 
